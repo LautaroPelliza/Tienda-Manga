@@ -1,0 +1,25 @@
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+
+ul{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    gap: 20%;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    font-size: 20px;
+}

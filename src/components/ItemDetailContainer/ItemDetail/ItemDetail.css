@@ -1,0 +1,54 @@
+.CardDetail {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 750px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.CardDetail h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #000000;
+    text-align: center;
+}
+.CardDetail section p {
+    font-size: 20px;
+    margin: 8px 0;
+    color: #000000;
+    text-align: start;
+    font-weight: 400;
+}
+.CardDetail section h3 {
+    font-size: 20px;
+    margin: 8px 0;
+    color: #000000;
+    text-align: start;
+    font-weight: 600;
+}
+.mainImage {
+    width: 200px;
+    height: 250px;
+    margin: 20px 20px ;
+    transition: border 0.3s;
+}
+
+.secondaryImageContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondaryImage {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: border 0.3s;
+}

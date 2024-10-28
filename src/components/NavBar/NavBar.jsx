@@ -2,16 +2,23 @@ import React from 'react'
 import logo from '../../assets/logo.png'
 import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
+    
     return (
         <nav>
-            <img src={logo} alt="logo"></img>
+            <Link to="/"><img src={logo} alt="logo" className='logo'></img></Link>
             <ul>
-                <li>Shonen</li>
-                <li>Seinen</li>
-                <li>Manwha</li>
-                <li>Coleccionables</li>
+                <li>
+                    <Link to="/category/Shonen" >Shonen</Link>
+                </li>
+                <li>
+                    <Link to="/category/Seinen" >Seinen</Link>
+                </li>
+                <li>
+                    <Link to="/category/Manhwa" >Manhwa</Link>
+                </li>
             </ul>
             <CartWidget/>
         </nav>

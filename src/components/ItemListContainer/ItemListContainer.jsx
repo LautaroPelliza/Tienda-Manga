@@ -1,10 +1,33 @@
 import React from 'react'
-import image from '../../assets/kakashi.png'
-function ItemListContainer({greeting}) {
+import { getProducts } from './data/data'
+import { useState, useEffect } from 'react'
+import ItemList from './ItemList'
+import { useParams } from 'react-router-dom'
+
+function ItemListContainer() {
+    const [products, setProducts] = useState([])
+
+    const {idCategory} = useParams()
+    console.log(idCategory)
+
+    useEffect(() => {
+        getProducts()
+        .then((dataProducts)=>{
+            if(idCategory){
+                const productsFilter = dataProducts.filter( (product) => product.category === idCategory)
+                setProducts(productsFilter)
+            }else {
+                setProducts(dataProducts)
+            }
+        })
+        .catch((err)=>{
+            console.error(err)
+        })
+    }, [idCategory])
+
     return (
         <div style={{textAlign: 'center'}}>
-            <h1>{greeting}</h1>
-            <img src={image} alt="" style={{width: '400px', height: '400px'}} />
+            <ItemList products={products} />
         </div>
     )
 }

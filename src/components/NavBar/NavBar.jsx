@@ -19,6 +19,9 @@ function NavBar() {
                 <li>
                     <Link to="/category/Manhwa" >Manhwa</Link>
                 </li>
+                <li>
+                    <Link to="/category/Collection" >Collection</Link>
+                </li>
             </ul>
             <CartWidget/>
         </nav>

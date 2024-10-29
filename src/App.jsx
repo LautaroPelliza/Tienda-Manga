@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar/NavBar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Route path='/category/:idCategory' element={<ItemListContainer />} />
           <Route path='/detail/:idProduct' element={<ItemDetailContainer />} />
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </>
   )

@@ -5,7 +5,6 @@ import './NavBar.css'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
-    
     return (
         <nav>
             <Link to="/"><img src={logo} alt="logo" className='logo'></img></Link>

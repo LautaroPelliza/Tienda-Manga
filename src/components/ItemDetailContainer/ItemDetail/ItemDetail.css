@@ -33,6 +33,12 @@
     text-align: start;
     font-weight: 600;
 }
+.imagesDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .mainImage {
     width: 200px;
     height: 250px;

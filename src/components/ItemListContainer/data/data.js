@@ -15,7 +15,7 @@ const products = [
         category: 'Shonen',
         price: 5000,
         stock: 10,
-        image: ['/img/shonen/One-piece-0.webp']
+        image: ['/img/shonen/One-piece-0.webp','/img/shonen/One-piece-1.jpg']
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const products = [
         category: 'Shonen',
         price: 5000,
         stock: 10,
-        image: ['/img/shonen/Naruto-0.jpg']
+        image: ['/img/shonen/Naruto-0.jpg','/img/shonen/Naruto-1.jpg']
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const products = [
         category: 'Shonen',
         price: 5000,
         stock: 10,
-        image: ['/img/shonen/Black-clover-0.webp']
+        image: ['/img/shonen/Black-clover-0.webp', '/img/shonen/Black-clover-1.jpg']
     },
     {
         id: 5,
@@ -42,7 +42,52 @@ const products = [
         category: 'Shonen',
         price: 5000,
         stock: 10,
-        image: ['/img/shonen/Shingeki-no-kyojin-0.webp']
+        image: ['/img/shonen/Shingeki-no-kyojin-0.webp', '/img/shonen/Shingeki-no-kyojin-1.webp']
+    },
+    {
+        id: 19,
+        name: 'My Hero Academia',
+        description: 'My Hero Academia es un manga de Kōhei Horikoshi que sigue a Izuku Midoriya, un joven sin superpoderes en un mundo donde la mayoría de la población los posee. A pesar de esto, sueña con convertirse en un héroe y proteger a los demás. Gracias a su determinación y la ayuda de su mentor All Might, Izuku entra en la academia de héroes y se enfrenta a desafíos para lograr su meta.',
+        category: 'Shonen',
+        price: 5000,
+        stock: 10,
+        image: ['/img/shonen/My-hero-academia-0.webp']
+    },
+    {
+        id: 20,
+        name: 'Bleach',
+        description: 'Bleach es un manga de Tite Kubo que sigue la historia de Ichigo Kurosaki, un joven que accidentalmente obtiene los poderes de un Shinigami (dios de la muerte). A partir de ese momento, se convierte en protector de la humanidad y lucha contra espíritus malignos conocidos como Hollows, descubriendo a su vez los secretos de los mundos espirituales.',
+        category: 'Shonen',
+        price: 5000,
+        stock: 10,
+        image: ['/img/shonen/Bleach-0.webp']
+    },
+    {
+        id: 21,
+        name: 'Hunter x Hunter',
+        description: 'Hunter x Hunter es un manga de Yoshihiro Togashi que sigue las aventuras de Gon Freecss, un joven que aspira a convertirse en un "Hunter" para encontrar a su padre, un legendario cazador. En su viaje, Gon enfrenta desafíos y hace amigos mientras descubre misterios y amenazas en el mundo de los Hunters.',
+        category: 'Shonen',
+        price: 5000,
+        stock: 10,
+        image: ['/img/shonen/Hunter-x-hunter-0.jpg']
+    },
+    {
+        id: 22,
+        name: 'Fairy Tail',
+        description: 'Fairy Tail es un manga de Hiro Mashima que narra las aventuras de Lucy Heartfilia, una joven maga que se une al gremio Fairy Tail, famoso por sus excéntricos y poderosos miembros. Junto a Natsu Dragneel y sus amigos, luchan contra amenazas mágicas y protegen a sus seres queridos mientras fortalecen sus lazos de amistad.',
+        category: 'Shonen',
+        price: 5000,
+        stock: 10,
+        image: ['/img/shonen/Fairy-tail-0.jpg']
+    },
+    {
+        id: 23,
+        name: 'Demon Slayer',
+        description: 'Demon Slayer (Kimetsu no Yaiba) es un manga de Koyoharu Gotouge que sigue la historia de Tanjiro Kamado, un joven que se convierte en cazador de demonios para vengar a su familia y salvar a su hermana Nezuko, quien fue convertida en demonio. En su viaje, Tanjiro enfrenta peligrosos demonios y forma lazos con otros cazadores en su búsqueda de justicia y redención.',
+        category: 'Shonen',
+        price: 5000,
+        stock: 10,
+        image: ['/img/shonen/Demon-slayer-0.jpg']
     },
     {
         id: 6,
@@ -88,6 +133,33 @@ const products = [
         price: 4900,
         stock: 10,
         image: ["/img/seinen/Tokyo-ghoul.jpg"]
+    },
+    {
+        id: 24,
+        name: 'Akira',
+        description: 'Akira es un revolucionario manga de Katsuhiro Otomo que presenta un futuro post-apocalíptico en Neo-Tokio, donde Kaneda, un líder de pandillas, se enfrenta a poderes psíquicos desatados. La obra explora temas de poder, corrupción y los límites de la humanidad.',
+        category: 'Seinen',
+        price: 5600,
+        stock: 10,
+        image: ['/img/seinen/Akira.jpg']
+    },
+    {
+        id: 25,
+        name: '20th Century Boys',
+        description: '20th Century Boys es un manga de Naoki Urasawa que sigue a un grupo de amigos que luchan contra una secta que busca controlar el mundo. A medida que el pasado y el presente se entrelazan, los protagonistas deben resolver el misterio de un símbolo que crearon en su infancia.',
+        category: 'Seinen',
+        price: 5300,
+        stock: 10,
+        image: ['/img/seinen/20th-century-boys.jpg']
+    },
+    {
+        id: 26,
+        name: 'Hellsing',
+        description: 'Hellsing, creado por Kouta Hirano, sigue la historia de la organización Hellsing, dedicada a eliminar amenazas sobrenaturales en Inglaterra. La historia se centra en Alucard, un poderoso vampiro, y su lucha contra seres oscuros en un mundo de violencia y conspiración.',
+        category: 'Seinen',
+        price: 5100,
+        stock: 10,
+        image: ['/img/seinen/Hellsing.jpg']
     },
     {
         id: 11,

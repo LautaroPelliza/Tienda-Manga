@@ -1,19 +1,27 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { cartContext } from '../../../context/CartContext'
 import './ItemDetail.css'
 
-function ItemDetail({ name, image, description, category, price, stock }) {
-    const [currentImage, setCurrentImage] = useState(image[0])
-    const images = image.filter ((image) => image !== currentImage)
+function ItemDetail({ product }) {
+    const [currentImage, setCurrentImage] = useState(product.image[0])
+    const images = product.image.filter ((image) => image !== currentImage)
     const handleImageChange = (image) => {
         setCurrentImage(image)
     }
+    const { addProductInCart} = useContext(cartContext)
+
+    const onAdd = (count) => {
+        const productCart = {...product, quantity: count}
+        addProductInCart(productCart)
+    }
+
     return (
         <article className="CardDetail">
             <picture className='imagesDetailContainer'>
                 <div >
-                    <img src={currentImage} alt={name} className='mainImage'/>
+                    <img src={currentImage} alt={product.name} className='mainImage'/>
                 </div>
                 <div className='secondaryImageContainer'>
                     {images.map((image) => (
@@ -29,11 +37,11 @@ function ItemDetail({ name, image, description, category, price, stock }) {
                 </div>
             </picture>
             <section>
-                <h2>{name}</h2>
-                <p>{description}</p>
-                <h3>Categoria: {category}</h3>
-                <h3>Precio: ${price}</h3>
-                <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log('Agregado', quantity)} />
+                <h2>{product.name}</h2>
+                <p>{product.description}</p>
+                <h3>Categoria: {product.category}</h3>
+                <h3>Precio: ${product.price}</h3>
+                <ItemCount stock={product.stock} onAdd={onAdd} />
             </section>
         </article>
     )

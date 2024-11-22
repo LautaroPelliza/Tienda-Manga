@@ -5,7 +5,7 @@ import db from "../../db/db.js"
 import { Link } from "react-router-dom"
 import validateForm from "../../utils/validateForm.js"
 import { toast } from "react-toastify"
-import "./checkout.css"
+import "./Checkout.css"
 
 function Checkout () {
     const [dataForm, setDataForm] = useState({

@@ -34,7 +34,6 @@ function Checkout () {
         if(response.status === "success"){
             uploadOrder(order)
         }else{
-            console.log(response.message)
             toast.error(response.message)
         }
     }

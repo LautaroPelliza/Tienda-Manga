@@ -1,8 +1,21 @@
-# React + Vite
+# Shonen Manga Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shonen Manga Store es un ecommerce dedicado a la venta de mangas, con navegación por géneros, detalles de productos, un carrito en tiempo real y un formulario de finalización de compra. Los datos se gestionan en Firebase, incluyendo los productos y las órdenes de compra generadas.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **HTML**
+- **React JS**
+- **CSS**
+- **Firebase**
+
+## Características
+
+- **Catálogo**: Explora mangas por género.
+- **Detalles de productos**: Información detallada de cada manga.
+- **Carrito en tiempo real**: Actualizaciones dinámicas al agregar productos.
+- **Finalización de compra**: Genera y almacena órdenes en Firebase.
+
+## Autor
+
+Desarrollado por Lautaro Pelliza. Proyecto para mejorar habilidades en React y Firebase.

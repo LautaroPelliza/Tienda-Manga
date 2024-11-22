@@ -2,19 +2,25 @@ import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { useState, useContext } from 'react'
 import { cartContext } from '../../../context/CartContext'
+import { Link } from 'react-router-dom'
 import './ItemDetail.css'
 
 function ItemDetail({ product }) {
     const [currentImage, setCurrentImage] = useState(product.image[0])
+    const [showItemCount, setShowItemCount] = useState(true)
+
     const images = product.image.filter ((image) => image !== currentImage)
     const handleImageChange = (image) => {
         setCurrentImage(image)
     }
+
     const { addProductInCart} = useContext(cartContext)
 
     const onAdd = (count) => {
         const productCart = {...product, quantity: count}
         addProductInCart(productCart)
+
+        setShowItemCount(false)
     }
 
     return (
@@ -41,7 +47,11 @@ function ItemDetail({ product }) {
                 <p>{product.description}</p>
                 <h3>Categoria: {product.category}</h3>
                 <h3>Precio: ${product.price}</h3>
-                <ItemCount stock={product.stock} onAdd={onAdd} />
+                {
+                    showItemCount
+                        ? <ItemCount stock={product.stock} onAdd={onAdd} />
+                        : <Link to='/cart'><button className='Button'>Ir al carrito</button></Link>
+                }
             </section>
         </article>
     )

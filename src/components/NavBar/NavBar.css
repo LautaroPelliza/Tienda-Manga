@@ -39,4 +39,29 @@ li a:hover{
     border-bottom: 3px solid #e71a1a;
 }
 
+@media screen and (max-width: 1300px) {
+    nav{
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    nav{
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+    ul{
+        display: none;
+    }
+    .cartWidget{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+}
+
 

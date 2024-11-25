@@ -44,7 +44,7 @@ footer .footer-top .icons-footer h3{
 }
 footer .footer-bottom {
     width: 100%;
-    padding: 15px 10px;
+    padding: 50px 0;
     text-align: center;
     color: #000;
 
@@ -59,4 +59,31 @@ footer svg{
     &:hover{
         transform: scale(1.2);
     }
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        padding: 0%;
+    }
+    footer .footer-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-bottom{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    footer .footer-top .logo-footer img{
+        width: 100px;
+    }
+    footer .footer-top .info-footer h3{
+        font-size: 15px
+    }
+    footer .footer-top .icons-footer h3{
+        font-size: 15px
+    }
+
 }

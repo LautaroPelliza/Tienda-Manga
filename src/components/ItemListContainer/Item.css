@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     gap: 15px;
 }
 .card {
@@ -52,3 +52,25 @@
 .button:hover {
     background-color: #e71a1ac7;
 }   
+
+@media screen and (max-width: 720px) {
+    .card-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .card {
+        width: 100px;
+        height: auto;
+    }
+    .img-card {
+        width: 75px;
+        height: 100px;
+    }
+    .card h3 {
+        font-size: 10px;
+    }
+    .price {
+        font-size: 10px;
+    }
+
+}

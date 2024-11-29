@@ -23,10 +23,9 @@
 }
 
 .Counter{
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    justify-content: start;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -34,4 +33,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+@media screen and (max-width: 800px) {
+    .Controls p{
+        font-size: 15px;
+    }
+    .Button{
+        padding: 5px 10px;
+    }
+    .Counter{
+        gap: 5px;
+    }
 }

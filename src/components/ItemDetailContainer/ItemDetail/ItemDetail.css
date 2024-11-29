@@ -66,3 +66,33 @@
     border-radius: 10px;
     padding: 10px 15px;
 }
+
+@media screen and (max-width: 800px) {
+    .CardDetail {
+        flex-direction: column;
+        width: 300px;
+    }
+    .CardDetail h2 {
+        font-size: 20px;
+    }
+    .CardDetail section p {
+        font-size: 15px;
+    }
+    .CardDetail section h3 {
+        font-size: 15px;
+    }
+    .mainImage {
+        width: 200px;
+        height: 250px;
+        margin: 20px 20px ;
+    }
+    .secondaryImageContainer {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .secondaryImage {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+}

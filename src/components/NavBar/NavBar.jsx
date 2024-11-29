@@ -22,7 +22,9 @@ function NavBar() {
                     <Link to="/category/Collection" >Collection</Link>
                 </li>
             </ul>
-            <CartWidget/>
+            <div className='cartWidget'>
+                <CartWidget/>
+            </div>
         </nav>
     )
 }
